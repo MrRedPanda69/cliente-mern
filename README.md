@@ -150,4 +150,4 @@ Project Link: [https://github.com/MrRedPanda69/cliente-mern](https://github.com/
 [license-shield]: https://img.shields.io/github/license/MrRedPanda69/repo.svg?style=for-the-badge
 [license-url]: https://github.com/MrRedPanda69/repo/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/MrRedPanda69
+[linkedin-url]: https://www.linkedin.com/in/jorge-gregorio-loredo-hern%C3%A1ndez-13a06820b/
