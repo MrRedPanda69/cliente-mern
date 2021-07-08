@@ -44,7 +44,7 @@
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+`MrRedPanda69`, `cliente-mern`, `JorgeMcfly_`, `jorgeloredohdz@gmail.com`
 
 
 ### Built With
@@ -72,7 +72,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/MrRedPanda69/cliente-mern.git
    ```
 2. Install NPM packages
    ```sh
@@ -93,7 +93,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/MrRedPanda69/cliente-mern/issues) for a list of proposed features (and known issues).
 
 
 
@@ -120,9 +120,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Your Name - [@JorgeMcfly_](https://twitter.com/JorgeMcfly_) - jorgeloredohdz@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/MrRedPanda69/cliente-mern](https://github.com/MrRedPanda69/cliente-mern)
 
 
 
@@ -139,15 +139,15 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/MrRedPanda69/repo.svg?style=for-the-badge
+[contributors-url]: https://github.com/MrRedPanda69/repo/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/MrRedPanda69/repo.svg?style=for-the-badge
+[forks-url]: https://github.com/MrRedPanda69/repo/network/members
+[stars-shield]: https://img.shields.io/github/stars/MrRedPanda69/repo.svg?style=for-the-badge
+[stars-url]: https://github.com/MrRedPanda69/repo/stargazers
+[issues-shield]: https://img.shields.io/github/issues/MrRedPanda69/repo.svg?style=for-the-badge
+[issues-url]: https://github.com/MrRedPanda69/repo/issues
+[license-shield]: https://img.shields.io/github/license/MrRedPanda69/repo.svg?style=for-the-badge
+[license-url]: https://github.com/MrRedPanda69/repo/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
+[linkedin-url]: https://linkedin.com/in/MrRedPanda69
