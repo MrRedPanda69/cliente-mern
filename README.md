@@ -1,8 +1,8 @@
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![MIT License][license-shield]][license-url] -->
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -40,32 +40,35 @@
 <!-- Sobre El Proyecto -->
 ## Sobre El Proyecto
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`MrRedPanda69`, `cliente-mern`, `JorgeMcfly_`, `jorgeloredohdz@gmail.com`
+Front-End de un proyecto hecho con el MERN Stack.
 
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [React.js](https://es.reactjs.org/)
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Comenzando
 
-To get a local copy up and running follow these simple steps.
+Si gustas crear una copia de este proyecto sigue los siguientes pasos.
 
-### Prerequisites
+### Pre-requisitos
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```sh
   npm install npm@latest -g
+  ```
+
+* Crear React-app usando npm y comenzar el desarrollo
+  ```sh
+  npx create-react-app nombre-app
+
+  cd nombre-app
+
+  npm start
   ```
 
 ### Installation
