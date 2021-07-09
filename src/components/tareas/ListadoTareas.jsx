@@ -6,8 +6,8 @@ const ListadoTareas = () => {
     const tareasProyecto = [
         { nombre: 'Elegir Plataforma', status: true },
         { nombre: 'Elegir Colores', status: false },
-        { nombre: 'Elegir Métodos de Pago', status: false },
-        { nombre: 'Elegir Cargo Mensual', status: true }
+        { nombre: 'Elegir Métodos de Pago', status: true },
+        { nombre: 'Elegir Cargo Mensual', status: false }
     ]
 
     return (  

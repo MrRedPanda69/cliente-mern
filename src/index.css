@@ -265,10 +265,14 @@ aside  {
 .correcto {
   background-color: rgba(154, 252, 154, .3);
   color: var(--gris3);
+  font-size: 1.5rem !important;
+  padding: 1rem 2.5rem !important;
 }
 .incompleto{
   background-color: rgba(255, 178, 178, .4);
   color: var(--gris3);
+  font-size: 1.5rem !important;
+  padding: 1rem 2rem !important;
 }
 .error {
   max-width: 600px;
