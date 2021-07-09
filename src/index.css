@@ -1,8 +1,10 @@
 :root {
   --blanco: #ffffff;
-  --gris1: #edf2f6;
-  --gris2: #2f3848;
-  --gris3: #1a202d;
+  --gris1: #efe4f1;
+  --gris2: #cebdd1;
+  --gris2hov: #bf97c7;
+  --gris3: #3A4454;
+  --gris3hov: #333f55;
   --negro: #000000;
   --headingFont:'Raleway', sans-serif;
   --textFont:  'Roboto', sans-serif;
@@ -47,7 +49,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: var(--gris2);
+  color: var(--gris3);
 }
 
 /** BOTONES **/
@@ -64,12 +66,21 @@ a {
 .btn:hover {
   cursor: pointer;
 }
+.btn-login {
+  background-color: var(--gris3);
+  color: var(--blanco);
+  font-weight: bold;
+}
+.btn-login:hover {
+  background: var(--gris3hov);
+}
 .btn-primario {
   background-color: var(--gris2);
-  color: var(--blanco);
+  color: var(--gris3);
+  font-weight: bold;
 }
 .btn-primario:hover {
-  background: var(--gris3);
+  background: var(--gris2hov);
 }
 .btn-secundario {
   background-color: var(--gris1);
@@ -119,7 +130,7 @@ aside  {
   background-color: var(--gris1);
 }
 .formulario-nuevo-proyecto .input-text::placeholder{
-  color: var(--gris2);
+  color: var(--gris3);
 }
 .proyectos {
   margin-top: 10rem;
@@ -285,7 +296,7 @@ aside  {
 }
 
 .form-usuario {
-    background-color: var(--gris2);
+    background-color: var(--gris3);
     height: 100vh;
     min-height: 800px;
     display: flex;
@@ -357,4 +368,11 @@ aside  {
 .alerta-error {
   background-color: rgb(230, 78, 78);
   color: var(--blanco);
+}
+
+.barra-fondo {
+  background-color: #3A4454;
+}
+.gris {
+  color: var(--gris3);
 }
