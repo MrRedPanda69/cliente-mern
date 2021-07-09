@@ -32,7 +32,7 @@ const Login = () => {
     return (  
         <div className="form-usuario">
             <div className="contenedor-form sombra-dark">
-                <h1>Iniciar Sesión</h1>
+                <h1 className="gris">Iniciar Sesión</h1>
 
                 <form
                     onSubmit={onSubmit}
@@ -64,7 +64,7 @@ const Login = () => {
                     <div className="campo-form">
                         <input 
                             type="submit"
-                            className="btn btn-primario btn-block"
+                            className="btn btn-login btn-block"
                             value="Iniciar Sesión"
                         />
                     </div>
