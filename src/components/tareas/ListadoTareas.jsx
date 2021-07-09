@@ -12,7 +12,7 @@ const ListadoTareas = () => {
 
     return (  
         <Fragment>
-            <h2 className="gris">Proyecto: Tienda Virtual</h2>
+            <h2 className="gris">Proyecto: Tienda Virtual </h2>
 
             <ul className="listado-tareas">
                 { tareasProyecto.length === 0
