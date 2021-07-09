@@ -1,10 +1,11 @@
 :root {
   --blanco: #ffffff;
-  --gris1: #efe4f1;
-  --gris2: #cebdd1;
+  --gris1: #e9e0eb;
+  --gris2: #d5b0dd;
   --gris2hov: #bf97c7;
-  --gris3: #3A4454;
-  --gris3hov: #333f55;
+  --gris3: #3b3241;
+  --gris3hov: #443355;
+  --gris4: #322536;
   --negro: #000000;
   --headingFont:'Raleway', sans-serif;
   --textFont:  'Roboto', sans-serif;
@@ -49,7 +50,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: var(--gris3);
+  color: var(--gris4);
 }
 
 /** BOTONES **/
@@ -76,7 +77,7 @@ a {
 }
 .btn-primario {
   background-color: var(--gris2);
-  color: var(--gris3);
+  color: var(--gris4);
   font-weight: bold;
 }
 .btn-primario:hover {
@@ -97,6 +98,8 @@ a {
   padding: 0;
   display: block;
   background-color: transparent;
+  color: var(--gris2);
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -130,7 +133,7 @@ aside  {
   background-color: var(--gris1);
 }
 .formulario-nuevo-proyecto .input-text::placeholder{
-  color: var(--gris3);
+  color: var(--gris4);
 }
 .proyectos {
   margin-top: 10rem;
@@ -159,7 +162,7 @@ aside  {
   font-weight: 900;
 }
 .nav-principal a {
-  color: var(--blanco);
+  color: var(--gris4);
   text-decoration: none;
 }
 .nav-principal a:first-of-type {
@@ -168,7 +171,7 @@ aside  {
 
 /** Formulario crear y editar tareas **/
 .formulario {
-  background-color: var(--gris3);
+  background-color: var(--gris4);
   padding: 4rem;
 }
 .formulario form {
@@ -371,8 +374,8 @@ aside  {
 }
 
 .barra-fondo {
-  background-color: #3A4454;
+  background-color: var(--gris3);
 }
 .gris {
-  color: var(--gris3);
+  color: var(--gris4);
 }
