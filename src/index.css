@@ -1,11 +1,11 @@
 :root {
   --blanco: #ffffff;
   --gris1: #e9e0eb;
-  --gris2: #d5b0dd;
+  --gris2: #cab2cf;
   --gris2hov: #bf97c7;
-  --gris3: #3b3241;
+  --gris3: #3f3844;
   --gris3hov: #443355;
-  --gris4: #322536;
+  --gris4: #382e3b;
   --negro: #000000;
   --headingFont:'Raleway', sans-serif;
   --textFont:  'Roboto', sans-serif;
@@ -60,7 +60,7 @@ a {
   padding: 1.5rem;
   font-size: 1.4;
   font-weight: 400;
-  border-radius: .5rem;
+  border-radius: .5rem !important;
   border: none;
   transition: background-color .3s ease;
 }
@@ -78,13 +78,15 @@ a {
 .btn-primario {
   background-color: var(--gris2);
   color: var(--gris4);
-  font-weight: bold;
+  font-weight: 700;
 }
 .btn-primario:hover {
   background: var(--gris2hov);
 }
 .btn-secundario {
-  background-color: var(--gris1);
+  background-color: var(--gris3hov);
+  color: var(--blanco);
+  font-weight: bold;
 }
 .btn-block {
   display: block;
@@ -99,6 +101,11 @@ a {
   display: block;
   background-color: transparent;
   color: var(--gris2);
+  font-weight: bold;
+}
+.btn-eliminar {
+  background-color: var(--gris3hov);
+  color: var(--blanco);
   font-weight: bold;
 }
 
