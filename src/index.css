@@ -390,3 +390,6 @@ aside  {
 .gris {
   color: var(--gris4);
 }
+.rosa {
+  color: var(--gris2hov);
+}
