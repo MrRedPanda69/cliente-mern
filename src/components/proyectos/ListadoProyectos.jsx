@@ -13,7 +13,7 @@ const ListadoProyectos = () => {
     }, []);
 
     // Revisar si proyectos tiene contenido
-    if(proyectos.length === 0) return null;
+    if(proyectos.length === 0) return <p className="rosa">No hay proyectos, comienza agregando uno.</p>;
 
 
     return (  
