@@ -255,7 +255,7 @@ aside  {
   font-weight: 900;
   font-family: var(--textFont);
   font-size: 1rem;
-  padding: .5rem;
+  padding: 1rem;
   border-radius: .5rem;
   cursor: pointer;
   border: none;
@@ -283,8 +283,9 @@ aside  {
 }
 .error {
   max-width: 600px;
-  margin: 2rem auto 0 auto;
-  background-color: rgb(170, 0, 0);
+  margin: 2rem auto 2rem auto;
+  border-radius: 0.5rem;
+  background-color: rgb(153, 72, 72);
   color: var(--blanco);
 }
 
