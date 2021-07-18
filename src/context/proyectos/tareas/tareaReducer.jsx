@@ -16,7 +16,7 @@ const TareaReducer = (state, action) => {
         case AGREGAR_TAREA:
             return {
                 ...state,
-                tareas: [...state.tareas, action.payload],
+                tareas: [action.payload, ...state.tareas],
                 errortarea: false
             }
         
