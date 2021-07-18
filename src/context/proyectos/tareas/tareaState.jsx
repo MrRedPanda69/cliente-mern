@@ -7,7 +7,9 @@ import {
     TAREAS_PROYECTO,
     AGREGAR_TAREA,
     VALIDAR_TAREA,
-    ELIMINAR_TAREA
+    ELIMINAR_TAREA,
+    ESTADO_TAREA,
+    TAREA_ACTUAL
 } from '../../../types';
 
 const TareaState = props => {
@@ -65,6 +67,22 @@ const TareaState = props => {
         })
     }
 
+    // Cambia el estado de cada tarea 
+    const cambiarTareaStatus = tarea => {
+        dispatch({
+            type: ESTADO_TAREA,
+            payload: tarea
+        })
+    }
+
+    // Extrae una tarea para edicion 
+    const saveTareaActual = tarea => {
+        dispatch({
+            type: TAREA_ACTUAL,
+            payload: tarea
+        })
+    }
+
     return (
         <TareaContext.Provider
             value={{
@@ -74,7 +92,8 @@ const TareaState = props => {
                 getTareas,
                 agregarTarea,
                 validarTarea,
-                eliminarTarea
+                eliminarTarea,
+                cambiarTareaStatus
             }}
         >
             {props.children}
