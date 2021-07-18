@@ -10,7 +10,9 @@ const ListadoProyectos = () => {
 
     // Obtener proyectos cuando carga el componente
     useEffect( () => {
-        getProyectos()
+        getProyectos();
+
+    // eslint-disable-next-line
     }, []);
 
     // Revisar si proyectos tiene contenido

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import proyectoContext from '../../context/proyectos/proyectoContext';
 import TareaContext from '../../context/proyectos/tareas/tareaContext';
 
@@ -9,7 +9,12 @@ const FormTarea = () => {
 
     // Obtener la funcion del contexto de tarea 
     const tareasContext = useContext(TareaContext);
-    const { errortarea, agregarTarea, validarTarea, getTareas } = tareasContext;
+    const { errortarea, tareaseleccionada, agregarTarea, validarTarea, getTareas, updateTarea, limpiarTarea } = tareasContext;
+
+    // Effect que detecta su hay una tarea seleccionada 
+    useEffect(() => {
+        tareaseleccionada !== null ? setTarea(tareaseleccionada) : setTarea({nombre: ''});
+    }, [tareaseleccionada]);
 
     // State del form 
     const [tarea, setTarea] = useState({
@@ -41,10 +46,19 @@ const FormTarea = () => {
             return;
         }
 
-        // Agregar la nueva tarea al state de tareas 
-        tarea.proyectoId = proyectoActual.id;
-        tarea.status = false;
-        agregarTarea(tarea);
+        // Revisar si es edicion o nueva tarea 
+        if(tareaseleccionada === null) {
+            // Agregar la nueva tarea al state de tareas 
+            tarea.proyectoId = proyectoActual.id;
+            tarea.status = false;
+            agregarTarea(tarea);
+        } else {
+            // Actualizar tarea existente
+            updateTarea(tarea);
+
+            // Eliminar tareaseleccionada del state 
+            limpiarTarea();
+        }
 
         // Obtener  filtrar las tareas del proyecto actual
         getTareas(proyectoActual.id);
@@ -76,7 +90,7 @@ const FormTarea = () => {
                     <input 
                         type="submit"
                         className="btn btn-primario btn-submit btn-block"
-                        value="Agregar Tarea"
+                        value={tareaseleccionada ? "Editar Tarea" : "Agregar Tarea"}
                     />
                 </div>
             </form>

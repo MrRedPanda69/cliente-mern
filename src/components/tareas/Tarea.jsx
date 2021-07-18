@@ -10,7 +10,7 @@ const Tarea = ({tarea}) => {
 
     // Obtener la funcion del contexto de tarea 
     const tareasContext = useContext(TareaContext);
-    const { eliminarTarea, getTareas, cambiarTareaStatus } = tareasContext;
+    const { eliminarTarea, getTareas, cambiarTareaStatus, saveTareaActual } = tareasContext;
 
     // Extraer el proyecto
     const [proyectoActual] = proyecto;
@@ -25,6 +25,11 @@ const Tarea = ({tarea}) => {
     const changeStatus = tarea => {
         tarea.status ? tarea.status = false : tarea.status = true;
         cambiarTareaStatus(tarea);
+    }
+
+    // Agrega una tarea acutal cuando el user quiere editarla
+    const seleccinarTarea = tarea => {
+        saveTareaActual(tarea);
     }
 
     return (
@@ -54,6 +59,7 @@ const Tarea = ({tarea}) => {
                 <button
                     type="button"
                     className="btn btn-primario"
+                    onClick={() => seleccinarTarea(tarea)}
                 >Editar</button>
 
                 <button
