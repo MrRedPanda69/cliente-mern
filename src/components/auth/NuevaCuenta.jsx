@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import alertaContext from '../../context/alertas/alertaContext';
 
 const NuevaCuenta = () => {
+    // Extraer valores de context 
+    const AlertaContext = useContext(alertaContext);
+    const { alerta, mostrarAlerta } = AlertaContext;
 
     // State para iniciar sesion
     const [user, setUser] = useState({
@@ -26,7 +30,7 @@ const NuevaCuenta = () => {
         e.preventDefault();
 
         // Validar que no haya campos vacios
-
+        if(nombre.trim() === '' || email.trim() === '' || password.trim() === '' || confirmar.trim() === '' ) mostrarAlerta('Todos los campos son obligarotios', 'alerta-error');
 
         // Password de min6 chars
 
@@ -39,6 +43,7 @@ const NuevaCuenta = () => {
 
     return (  
         <div className="form-usuario">
+            { alerta ? ( <div className={`alerta ${alerta.categoria}`}>{alerta.msg}</div> ) : null }
             <div className="contenedor-form sombra-dark">
                 <h1 className="gris">Obtener una Cuenta</h1>
 
