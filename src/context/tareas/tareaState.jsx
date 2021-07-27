@@ -4,7 +4,7 @@ import TareaContext from './tareaContext';
 import TareaReducer from './tareaReducer';
 import { v4 as uuidv4 } from 'uuid';
 
-import {
+import { 
     TAREAS_PROYECTO,
     AGREGAR_TAREA,
     VALIDAR_TAREA,
