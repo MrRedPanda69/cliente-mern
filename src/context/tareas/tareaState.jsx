@@ -13,7 +13,7 @@ import {
     TAREA_ACTUAL,
     ACTUALIZAR_TAREA,
     LIMPIAR_TAREA
-} from '../../../types';
+} from '../../types';
 
 const TareaState = props => {
     const initialState = {

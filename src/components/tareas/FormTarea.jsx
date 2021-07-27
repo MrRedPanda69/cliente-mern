@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import proyectoContext from '../../context/proyectos/proyectoContext';
-import TareaContext from '../../context/proyectos/tareas/tareaContext';
+import TareaContext from '../../context/tareas/tareaContext';
 
 const FormTarea = () => {
     // Extraer si un proyecto esta activo
