@@ -7,7 +7,12 @@ import Proyectos from './components/proyectos/Proyectos';
 import ProyectoState from './context/proyectos/proyectoState';
 import TareaState from './context/tareas/tareaState';
 import AlertaState from './context/alertas/alertaState';  
-import AuthState from './context/autenticacion/authState';  // test
+import AuthState from './context/autenticacion/authState';  
+import authToken from './config/authToken';
+
+// Revisar si hay token
+const token = localStorage.getItem('token');
+if(token) authToken(token);
 
 function App() {
   return (
