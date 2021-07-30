@@ -15,14 +15,16 @@ const authReducer = (state, action) => {
             return {
                 ...state,
                 autenticado: true,
-                mensaje: null
+                mensaje: null,
+                loading: false
             }
 
         case OBTENER_USUARIO:
             return {
                 ...state,
                 autenticado: true,
-                usuario: action.payload
+                usuario: action.payload,
+                loading: false
             }
 
         case CERRAR_SESION:
@@ -34,7 +36,8 @@ const authReducer = (state, action) => {
                 usuario: null,
                 autenticado: null,
                 token: null,
-                mensaje: action.payload
+                mensaje: action.payload,
+                loading: false
             }
 
         default:
