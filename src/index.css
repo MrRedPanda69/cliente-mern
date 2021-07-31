@@ -371,7 +371,7 @@ aside  {
 @media (min-width:768px) {
   .alerta {
       width: auto;
-      top: 30px;
+      top: 10px;
       right: 10px;
       left: auto;
   }
