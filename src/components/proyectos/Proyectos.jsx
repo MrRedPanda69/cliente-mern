@@ -13,6 +13,8 @@ const Proyectos = () => {
 
     useEffect(() => {
         userAuth();
+        
+        // eslint-disable-next-line
     }, []);
 
     return (  
